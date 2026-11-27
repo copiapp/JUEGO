@@ -158,10 +158,10 @@ h3{margin:0 0 10px;font-size:24px;font-weight:900}
 <script>
 const CKM=300,GOAL=17000,SHIFT=180,MINH=6000,MINKM=500,TMAX=10,KEY='copi_ranking_v1';
 const O=[
-{id:'A',t:0,pay:10000,toll:800,pick:5,trip:15,min:70,from:'Puerto Madero · Sushi',to:'Conurbano Sur',zone:1},
+{id:'A',t:0,pay:10000,toll:800,pick:5,trip:11,min:60,from:'Puerto Madero · Sushi',to:'Villa Urquiza',zone:0},
 {id:'B',t:10,pay:3800,tip:400,pick:.6,trip:2.2,min:16,from:'Villa Crespo · Pizzería',to:'Palermo',zone:0},
-{id:'C',t:30,pay:5600,pick:1.5,trip:4.5,min:28,from:'Belgrano · Parrilla',to:'Núñez',zone:0},
-{id:'D',t:65,pay:6900,pick:3,trip:9,min:44,from:'Caballito · Heladería',to:'Zona Oeste lejana',zone:1},
+{id:'C',t:30,pay:5600,pick:1.5,trip:4.5,min:28,from:'Belgrano · Parrilla',to:'Villa Crespo',zone:0},
+{id:'D',t:65,pay:2600,tip:200,pick:7,trip:3,min:30,from:'Núñez · Panadería',to:'Belgrano',zone:0},
 {id:'E',t:90,pay:7800,tip:500,pick:1.5,trip:6,min:35,from:'Recoleta · Comidas',to:'Colegiales',zone:0},
 {id:'F',t:135,pay:8000,pick:1.5,trip:5,min:28,from:'Retiro · Hamburguesería',to:'Conurbano Norte',zone:1}];
 O.forEach(o=>{o.base=o.pay;o.pay+=o.tip||0;o.km=o.pick+o.trip;o.cost=Math.round(o.km*CKM)+(o.toll||0);o.net=o.pay-o.cost;o.ph=Math.round(o.net/(o.min/60));o.pk=Math.round(o.net/o.km);
